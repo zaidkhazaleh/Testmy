@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Khaza'leh | النسخة الاحترافية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles-bg"></div> <!-- خلفية جزيئات -->
+    <header data-aos="fade-down">
+        <div class="profile">
+            <img src="profile.jpg" alt="Zaid" class="profile-img">
+            <h1 class="typing-effect">زيد خزاعلة</h1> <!-- تأثير كتابة -->
+            <p id="auto-theme-text">مرحباً بكم في موقعي الشخصي</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="links-container">
+            <div class="search-box">
+                <input type="text" placeholder="ابحث عن رابط...">
+            </div>
+            <div class="links-grid" id="links"></div> <!-- يتم تعبئته عبر JS -->
+        </div>
+
+        <!-- مشغل الصوت -->
+        <div class="audio-player">
+            <audio id="quran-radio" src="radio-link.m3u8"></audio>
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
