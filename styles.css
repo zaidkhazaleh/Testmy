@@ -1,0 +1,33 @@
+/* تأثيرات الجزيئات */
+.particles-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* تأثير الكتابة */
+.typing-effect {
+    border-right: 3px solid #fff;
+    animation: blink 0.5s infinite, typing 3s steps(20);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* مشغل الصوت */
+.audio-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
