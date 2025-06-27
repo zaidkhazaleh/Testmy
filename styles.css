@@ -1,34 +1,63 @@
-/* تأثيرات الجزيئات */
-
-.particles-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+body {
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Tajawal', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* تأثير الكتابة */
-.typing-effect {
-    border-right: 3px solid #fff;
-    animation: blink 0.5s infinite, typing 3s steps(20);
-    white-space: nowrap;
-    overflow: hidden;
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+header img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.4);
 }
 
-/* مشغل الصوت */
-.audio-player {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0,0,0,0.7);
-    padding: 15px;
-    border-radius: 50%;
-    cursor: pointer;
+header h1 {
+  margin: 15px 0 5px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+header p {
+  color: #ddd;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: block;
+  margin: 10px 0;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
 }
